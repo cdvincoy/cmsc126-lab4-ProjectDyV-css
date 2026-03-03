@@ -1,0 +1,91 @@
+/*
+LABORATORY EXERCISE #4
+
+Objective:
+Edit this CSS file to design and style the different web pages.
+
+Important:
+You are NOT allowed to modify or change any of the HTML files.
+All design and layout changes must be done using CSS only.
+
+Guidelines:
+1. Some elements do not have classes or IDs (for example, the list of steps in making coffee).
+   To style these elements, use contextual selectors, element selectors,
+   attribute selectors, or other appropriate CSS selector techniques.
+
+2. Before writing your CSS, it is highly recommended to create a simple
+   wireframe or layout plan. This will help you organize your design,
+   improve consistency, and ensure that all members of your group
+   are aligned and on the same page regarding the overall design.
+
+3. You are not required to style every single class or ID.
+   Your main goal is to create a website that is visually appealing,
+   well-organized, and user-friendly.
+
+Focus on applying proper CSS techniques such as:
+- Typography
+- Spacing (margin and padding)
+- Layout
+- Colors
+- Alignment
+
+
+
+*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One");
+
+.home {
+   max-width: 100%;
+   margin: 0 auto;
+   overflow-x: hidden;
+   
+}
+
+.coffee {
+
+
+}
+
+#title {
+   position: relative;
+   text-align: center;
+   color: #38220f;
+   font-family: "Fugaz One";
+   top: 5px;
+}
+
+#banner {
+ color:black;
+}
+
+.imgBanner {
+   width: 100vw;
+   height: 100vh;
+}
+
+.navBar {
+   justify-content: center;
+   position: relative;
+   background-color: white;
+   top: 30px;
+   
+}
+
+.navigation{
+   color: ;
+   text-decoration: none;
+   
+   margin-left: 40px;
+   font-weight: ;
+}
+
+#welcome {
+   font-family: century;
+   position: absolute;
+   bottom: 80px;
+   left: 20px;
+   right: 10px;
+   color: white;
+   display: ;
+}

@@ -454,6 +454,14 @@ footer {
    background-color: #4a2908;
 }
 
+.about .coffee em {
+   color: #fbfcee;
+   font-weight: bold;
+   font-style: italic;
+   background-color: #4a2908;
+}
+
+
 .about .coffee img {
    width: 500px;
    height: 500px;

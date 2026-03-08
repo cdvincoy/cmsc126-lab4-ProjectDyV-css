@@ -180,13 +180,15 @@ h2 {
    text-align: center;
    font-family: "Dongle";
    font-size: 50px;
-   color: #4a2908;
-   border: 10px solid #693714;
+   color: #895129;
+   border: 10px solid #895129;
 }
 
 .coffee ol {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(5, auto);
+   grid-auto-flow: column;
    list-style-position: inside;
    padding-left: 50px;
    padding-right: 50px;
@@ -194,17 +196,12 @@ h2 {
 }
 
 .home .coffee li {
-   border-radius: 20px;
-   border: 3px solid #825423;
-   background-color: #4a2908;
-   padding: 20px;
+   border-radius: 10px;
+   background-color: #895129;
+   padding: 25px;
    font-family: "Alegreya";
-   font-size: 16px;
-   text-align: center;
-}
-
-.home .coffee li:last-child {
-   grid-column: 2;
+   font-size: 20px;
+   text-align: justify;
 }
 
 .coffee li::marker{

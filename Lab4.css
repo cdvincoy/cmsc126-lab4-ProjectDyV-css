@@ -69,7 +69,6 @@ Focus on applying proper CSS techniques such as:
 
 hr {
    border: none;
-   background-color: #4a2908;
    height: 3px;
    margin-top: -20px;
 }
@@ -77,12 +76,12 @@ hr {
 
 
 header {
-   background-color: #693714;
+   background-color: #dacdb1;
 }
 
 #title {
    text-align: center;
-   color: #dacdb1;
+   color: #4a2908;
    font-family: "Fascinate";
    font-size: 30px;
    padding: 20px 0px 20px 0px;
@@ -97,13 +96,13 @@ header {
    top: 0;
    z-index: 1;
    width: 100%;
-   height: 600px;
+   height: 300px;
    object-fit: cover;
    object-position: left center;
 }
 
 .imgBanner {
-   margin-top: -25px;
+   margin-top: 45px;
    width: 120%;
    
 }
@@ -111,14 +110,14 @@ header {
 #welcome {
    position: absolute;
    display: block;
-   top: 10%;
+   top: 6%;
    left: 3%;
    right: 40%;
    color: #fbfcee;
    font-family: "Alegreya";
    font-size: 30px;
    text-align: left;
-   padding: 50px 0px 50px 20px;
+   padding: 50px 20px 50px 20px;
    /* border: 2px solid #fbfcee; */
    border-top-right-radius: 100px;
    border-bottom-right-radius: 100px;
@@ -135,6 +134,7 @@ header {
    gap: 150px;
    padding: 10px 0;
    z-index: 3;
+   background-color: #4a2908;
 }
 
 .navigation{
@@ -275,15 +275,26 @@ a[href="#title"]:hover{
 }
 
 p#title {
-   color: #4a2908;
-   border-color: #4a2908;
+   color: #dacdb1;
+   background-color: #4a2908;
    margin: 0;
+   padding: 20px 0px 20px 0px;
+   border-top: 10px solid #4a2908;
+   border-bottom: 20px solid #4a2908;
+   border-left: 20px solid #4a2908;
+   border-right: 20px solid #4a2908;
 }
 
 footer {
    text-align: center;
    font-family: "Marcellus";
-   color:#4a2908;
+   color: #dacdb1;
+   background-color: #4a2908;
+   padding: 0px 0px 0px 0px;
+   border-top: 0px solid #4a2908;
+   border-bottom: 10px solid #4a2908;
+   border-left: 20px solid #4a2908;
+   border-right: 20px solid #4a2908;
 }
 
 /* Order */
@@ -369,10 +380,10 @@ footer {
 }
 
 .about .coffee #banner {
-   width: 150px;
-   height: 150px;
+   width: 250px;
+   height: 250px;
    border-radius: 50%;
-   padding-top: 20px;
+   padding-top: 0px;
 }
 
 .about .coffee p{

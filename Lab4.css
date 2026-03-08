@@ -42,11 +42,11 @@ Focus on applying proper CSS techniques such as:
 @import url("https://fonts.googleapis.com/css2?family=Marcellus");
 
 
-
+/* Common Styles */
 .home {
    margin: 0;
    margin-top: -20px;
-   background-color: #825423;
+   background-color: #e4cdb0;
    color: #fbfcee;
    position: relative;
 }
@@ -54,7 +54,7 @@ Focus on applying proper CSS techniques such as:
 .order {
    margin: 0;
    margin-top: -20px;
-   background-color: #825423;
+   background-color: #e4cdb0;
    color: #fbfcee;
    position: relative;
 }
@@ -74,9 +74,7 @@ hr {
    margin-top: -20px;
 }
 
-.coffee {
-   
-}
+
 
 header {
    background-color: #693714;
@@ -113,21 +111,23 @@ header {
 #welcome {
    position: absolute;
    display: block;
-   top: 18%;
+   top: 10%;
    left: 3%;
-   right: 30%;
+   right: 40%;
    color: #fbfcee;
    font-family: "Alegreya";
    font-size: 30px;
    text-align: left;
-   padding: 40px 20px 40px 20px;
-   border: 2px solid #4a2908;
-   background-color: rgba(0, 0, 0, 0.5);
+   padding: 50px 0px 50px 20px;
+   /* border: 2px solid #fbfcee; */
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   background-color: rgba(0, 0, 0, 0.8);
    z-index: 2;
 }
 
 .navBar {
-   top: 7%;
+   /* top: 1%; */
    position: absolute;
    display: flex;
    width:100%;
@@ -152,3 +152,185 @@ header {
    border-radius: 5px;
 }
 
+a[href="#bottomPage"]{
+   display: block;
+   width: max-content;
+   margin: 5px auto 25px auto;
+   color: #4a2908;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   background-color: aliceblue;
+   padding-top: 10px 15px;
+}
+
+a[href="#bottomPage"]:hover{
+   color: #dacdb1;
+   background-color: #4a2908;
+}
+
+/* Home */
+.coffee {
+   margin: 0px;
+}
+
+h2 {
+   margin: 0;
+   text-align: center;
+   font-family: "Dongle";
+   font-size: 50px;
+   color: #4a2908;
+   border: 10px solid #693714;
+}
+
+.coffee ol {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   list-style-position: inside;
+   padding-left: 50px;
+   padding-right: 50px;
+   gap: 30px;
+}
+
+.coffee li {
+   border-radius: 20px;
+   border: 3px solid #825423;
+   background-color: #4a2908;
+   padding: 20px;
+   font-family: "Alegreya";
+   font-size: 16px;
+   text-align: center;
+}
+
+.coffee li:last-child {
+   grid-column: 2;
+}
+
+.coffee li::marker{
+   font-weight: bolder;
+}
+
+.emphasis {
+   color: #fbfcee;
+   font-weight: bold;
+   font-style: italic;
+   background-color: #4a2908;
+}
+
+p.definition {
+   padding: 20px 70px 20px 70px;
+   text-align: justify;
+   text-indent: 50px;
+   color:#4a2908;
+   font-size: 20px;
+   font-family: "Alegreya";
+}
+
+.home .coffee img{
+   display: block;
+   margin: 0 auto;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+}
+
+#orderCoffee {
+   display: block;
+   margin: 20px auto;
+   padding: 5px 20px;
+   font-family: "Dongle";
+   font-size: 30px;
+   background-color: #fbfcee;
+   color: #4a2908;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+#orderCoffee:hover{
+   color: #4a2908;
+}
+
+p#bottomPage.definition{
+   text-indent: 50px;
+   text-align: justify;
+}
+
+a[href="#title"]{
+   display: block;
+   width: max-content;
+   margin: 5px auto 25px auto;
+   color: #4a2908;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   background-color: aliceblue;
+   padding-top: 10px 15px;
+}
+
+a[href="#title"]:hover{
+   color: #dacdb1;
+   background-color: #4a2908;
+}
+
+p#title {
+   color: #4a2908;
+   border-color: #4a2908;
+   margin: 0;
+}
+
+footer {
+   text-align: center;
+   font-family: "Marcellus";
+   color:#4a2908;
+}
+
+/* Order */
+
+.order .coffee #tagline {
+   /* display: inline-block; */
+   white-space: nowrap;
+   position: relative;
+   /* text-align: center; */
+   font-family: "Alegreya";
+   color:#4a2908;
+   font-size: 25px;
+   background-color: rgba(255, 255, 255, 0.3);
+   margin: -20px 0px 10px 0px;
+   text-align: center;
+   /* animation: slideLoop 25s linear infinite; */
+}
+
+/* @keyframes slideLoop {
+   0% { left: 100%;}
+   100% {left: -100%;}
+   
+} */
+
+#coffee_choices {
+   width: 100%;
+   padding: 0px 20px 0px 20px;
+}
+
+.coffeeTitle {
+   text-align: center;
+   padding: 20px 10px;
+}
+
+.coffeeImg {
+   padding: 20px;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+}
+
+.order .label {
+     padding: 20px 0x 20px 0px;
+     text-align: center;
+}
+
+.coffee form{
+   text-align: center;
+   padding: 80px 0px;
+}

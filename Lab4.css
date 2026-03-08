@@ -62,7 +62,7 @@ Focus on applying proper CSS techniques such as:
 .about {
    margin: 0;
    margin-top: -20px;
-   background-color: #825423;
+   background-color: #e4cdb0;
    color: #fbfcee;
    position: relative;
 }
@@ -193,7 +193,7 @@ h2 {
    gap: 30px;
 }
 
-.coffee li {
+.home .coffee li {
    border-radius: 20px;
    border: 3px solid #825423;
    background-color: #4a2908;
@@ -203,7 +203,7 @@ h2 {
    text-align: center;
 }
 
-.coffee li:last-child {
+.home .coffee li:last-child {
    grid-column: 2;
 }
 
@@ -315,22 +315,130 @@ footer {
 
 .coffeeTitle {
    text-align: center;
-   padding: 20px 10px;
+   padding: 30px 10px 15px 10px;
+   font-family: "Alegreya";
+   font-size: 30px;
+   color: #693714;
 }
 
 .coffeeImg {
-   padding: 20px;
-   width: 150px;
-   height: 150px;
+   padding: 0px 20px;
+   width: 80px;
+   height: 80px;
    border-radius: 50%;
 }
 
+.coffee td {
+   width: 50px;
+   text-align: center;
+}
+
 .order .label {
-     padding: 20px 0x 20px 0px;
+     padding: 5px 10px;
      text-align: center;
+     font-family: "Dongle";
+     font-size: 30px;
+     line-height: 20px;
+     color: #4a2908;
+     background-color: rgba(255, 255, 255, 0.2);
+     border-radius: 100px;
 }
 
 .coffee form{
    text-align: center;
-   padding: 80px 0px;
+   padding: 30px 0px;
+}
+
+.coffee form label {
+   font-family: "Alegreya";
+   font-size: 15px;
+   color: #4a2908;
+   font-weight: 500;
+}
+
+.coffee form input[type="submit"]{
+   font-family: "Dongle";
+   font-size: 25px;
+   padding: 0px 50px;
+}
+
+/* About */
+.about .coffee {
+   width: 100%;
+   text-align: center;
+}
+
+.about .coffee #banner {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   padding-top: 20px;
+}
+
+.about .coffee p{
+   font-family: "Alegreya";
+   text-align: center;
+   font-size: 30px;
+   padding: 5px 50px 10px 50px;
+   font-weight: 500;
+}
+
+.about .coffee ul{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   list-style: none;
+   padding: 50px 20px 50px 30px;
+   gap: 10px;
+}
+
+.about .coffee li{
+   border-radius: 20px;
+   border: 3px solid #825423;
+   background-color: #4a2908;
+   padding: 10px 0px 10px 0px;
+   text-align: center;
+}
+
+.coffeeVideo {
+   width: 300px;
+}
+
+.about .coffee table {
+   padding: 50px 0px 100px 0px;
+   width: 100%;
+   text-align: center;
+}
+
+.about .coffee table td {
+   width: 100px;
+   height: 100px;
+}
+
+.about .coffee .teamMember {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 5px solid #4a2908;
+}
+
+.about .coffee .label {
+   width: 100px;
+   height: 0px;
+   color: #4a2908;
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 100px;
+   font-style: italic;
+}
+
+.about .coffee .term {
+   color: #fbfcee;
+   font-weight: bold;
+   font-style: italic;
+   background-color: #4a2908;
+}
+
+.about .coffee img {
+   width: 500px;
+   height: 500px;
+   border-radius: 50%;
 }

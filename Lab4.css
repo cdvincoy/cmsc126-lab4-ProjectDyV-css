@@ -1,0 +1,453 @@
+/*
+LABORATORY EXERCISE #4
+
+Objective:
+Edit this CSS file to design and style the different web pages.
+
+Important:
+You are NOT allowed to modify or change any of the HTML files.
+All design and layout changes must be done using CSS only.
+
+Guidelines:
+1. Some elements do not have classes or IDs (for example, the list of steps in making coffee).
+   To style these elements, use contextual selectors, element selectors,
+   attribute selectors, or other appropriate CSS selector techniques.
+
+2. Before writing your CSS, it is highly recommended to create a simple
+   wireframe or layout plan. This will help you organize your design,
+   improve consistency, and ensure that all members of your group
+   are aligned and on the same page regarding the overall design.
+
+3. You are not required to style every single class or ID.
+   Your main goal is to create a website that is visually appealing,
+   well-organized, and user-friendly.
+
+Focus on applying proper CSS techniques such as:
+- Typography
+- Spacing (margin and padding)
+- Layout
+- Colors
+- Alignment
+*/
+
+/* Start of stylesheet */
+
+@import url("https://fonts.googleapis.com/css2?family=Fascinate");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya");
+@import url("https://fonts.googleapis.com/css2?family=Dongle");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus");
+
+
+/* Common Styles */
+.home {
+   margin: 0;
+   background-color: #e4cdb0;
+   color: #fbfcee;
+   position: relative;
+}
+
+.order {
+   margin: 0;
+   background-color: #e4cdb0;
+   color: #fbfcee;
+   position: relative;
+}
+
+.about {
+   margin: 0;
+   background-color: #e4cdb0;
+   color: #fbfcee;
+   position: relative;
+}
+
+header {
+   background-color: #dacdb1;
+}
+
+#title {
+   margin: 0px;
+   padding: 40px 0px;
+   text-align: center;
+   color: #4a2908;
+   font-family: "Fascinate";
+   font-size: 30px;
+}
+
+hr {
+   border: none;
+}
+
+#banner {
+   position: relative;
+   margin-top: 40px;
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
+   z-index: 1;
+}
+
+#welcome {
+   position: absolute;
+   top: 7%;
+   left: 0%;
+   right: 44%;
+   color: #fbfcee;
+   font-family: "Alegreya";
+   font-size: 30px;
+   text-align: left;
+   padding: 50px 20px 50px 20px;
+   border-top-right-radius: 100px;
+   border-bottom-right-radius: 100px;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 2;
+}
+
+.navBar {
+   position: absolute;
+   width:100%;
+   display: flex;
+   justify-content: center;
+   gap: 150px;
+   padding: 10px 0;
+   z-index: 3;
+   background-color: #4a2908;
+}
+
+.navigation{
+   color: #fbfcee;
+   text-decoration: none;
+   font-family: "Dongle";
+   font-size: 30px;
+}
+
+.navigation:hover{
+   color: #4a2908;
+   background-color: #dacdb1;
+   padding: 0px 10px 0px 10px;
+   border: 2px solid #825423;
+   border-radius: 10px;
+}
+
+a[href="#bottomPage"]{
+   display: flex;
+   width: max-content;
+   margin: 5px auto 5px auto;
+   color: #4a2908;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   background-color: #fbfcee;
+   padding-top: 10px 15px;
+}
+
+a[href="#bottomPage"]:hover{
+   color: #dacdb1;
+   background-color: #4a2908;
+}
+
+a[href="#title"]{
+   display: flex;
+   width: max-content;
+   margin: 5px auto 25px auto;
+   color: #4a2908;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 5px 10px;
+   border-radius: 5px;
+   background-color: #fbfcee;
+   padding-top: 10px 15px;
+}
+
+a[href="#title"]:hover{
+   color: #dacdb1;
+   background-color: #4a2908;
+}
+
+h2 {
+   margin: 0;
+   margin-top: 20px;
+   text-align: center;
+   font-family: "Dongle";
+   font-size: 50px;
+   color: #895129;
+   border: 10px solid #895129;
+}
+
+footer {
+   margin: 0;
+   text-align: center;
+   color: #dacdb1;
+   background-color: #4a2908;
+   padding: 0px 0px 10px 0px;
+   font-family: "Marcellus";
+   font-size: 20px;
+}
+
+footer p#title {
+   margin: 0;
+   color: #dacdb1;
+   background-color: #4a2908;
+   padding: 40px 0px 40px 0px;
+}
+
+/* Both present in Home and About Page */
+.emphasis { 
+   color: #fbfcee;
+   font-weight: bold;
+   font-style: italic;
+   background-color: #4a2908fb;
+   border-radius: 5px;
+   padding: 0px 10px;
+}
+
+p.definition {
+   padding: 25px;
+   text-align: justify;
+   text-indent: 50px;
+   color:#4a2908;
+   font-size: 20px;
+   font-family: "Alegreya";
+   max-width: 900px;
+   margin: 30px auto;
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+/* Home Page*/
+.home .coffee {
+   margin: 0px;
+}
+
+.home .coffee ol {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(5, auto);
+   grid-auto-flow: row;
+   list-style-position: inside;
+   padding-left: 50px;
+   padding-right: 50px;
+   gap: 30px;
+}
+
+.home .coffee li {
+   border-radius: 10px;
+   background-color: #895129;
+   padding: 25px;
+   font-family: "Alegreya";
+   font-size: 20px;
+   text-align: justify;
+}
+
+.home .coffee li::marker{
+   font-weight: bolder;
+}
+
+.home .coffee img{
+   display: flex;
+   margin: 0 auto;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.home #orderCoffee {
+   display: flex;
+   margin: 20px auto;
+   padding: 5px 20px;
+   font-family: "Dongle";
+   font-size: 30px;
+   background-color: #fbfcee;
+   color: #4a2908;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.home #orderCoffee:hover{
+   color: #fbfcee;
+   background-color: #4a2908;
+}
+
+/* Order Page */
+.order .coffee #tagline {
+   display: flex;
+   width: max-content;
+   justify-content: center;
+   font-family: "Alegreya";
+   color:#4a2908;
+   font-size: 30px;
+   background-color: rgba(255, 255, 255, 0.3);
+   padding: 0px 10px;
+   border-radius: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   margin: -20px auto 0px auto;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+}
+
+.order #coffee_choices {
+   width: 100%;
+   padding: 0px 20px;
+}
+
+.order .coffeeTitle {
+   text-align: center;
+   padding: 30px 10px 15px 10px;
+   font-family: "Alegreya";
+   font-weight: 500;
+   font-size: 30px;
+   color: #693714;
+}
+
+.order .coffee .coffeeImg {
+   padding: 0px 20px;
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+}
+
+.order .coffee td {
+   width: 80px;
+   text-align: center;
+}
+
+.order .label {
+     padding: 5px 10px;
+     text-align: center;
+     font-family: "Dongle";
+     font-size: 30px;
+     line-height: 20px;
+     color: #4a2908;
+     background-color: rgba(255, 255, 255, 0.2);
+     border-radius: 100px;
+}
+
+.order .coffee form{
+   text-align: center;
+   padding: 25px;
+   max-width: 900px;
+   margin: 30px auto;
+   background: #fbfcee;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.order .coffee form label {
+   font-family: "Alegreya";
+   font-size: 15px;
+   color: #4a2908;
+   font-weight: 500;
+}
+
+.order .coffee form input[type="submit"]{
+   font-family: "Dongle";
+   font-size: 25px;
+   padding: 0px 50px;
+}
+
+/* About Page*/
+.about .coffee {
+   width: 100%;
+   text-align: center;
+}
+
+.about .coffee #banner {
+   width: 270px;
+   height: 270px;
+   border-radius: 50%;
+   margin: 0;
+}
+
+.about .coffee p.definition{
+   font-family: "Alegreya";
+   text-align: justify;
+   font-size: 24px;
+   padding: 20px 20px;
+   font-weight: 500;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+   border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.about .coffee ul{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   list-style: none;
+   padding: 50px 20px 50px 30px;
+   gap: 10px;
+}
+
+.about .coffee li{
+   border-radius: 20px;
+   border: 3px solid #825423;
+   background-color: #4a2908;
+   padding: 10px 0px 10px 0px;
+}
+
+.about .coffeeVideo {
+   width: 300px;
+   border-radius:20px;
+}
+
+.about .coffee table {
+   padding: 50px 0px 100px 0px;
+   width: 100%;
+   text-align: center;
+}
+
+.about .coffee table td {
+   width: 100px;
+   height: 100px;
+}
+
+.about .coffee .teamMember {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 5px solid #4a2908;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+}
+
+.about .coffee .label {
+   width: 100px;
+   height: 0px;
+   color: #4a2908;
+   background-color: rgba(255, 255, 255, 0.2);
+   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+   border-radius: 100px;
+   font-style: italic;
+   padding: 5px 0px; 
+}
+
+.about .coffee .term {
+   color: #fbfcee;
+   font-weight: bold;
+   font-style: italic;
+   background-color: #4a2908;
+}
+
+.about .coffee em {
+   color: #fbfcee;
+   font-weight: bold;
+   font-style: italic;
+   background-color: #4a2908;
+   border-radius: 5px;
+   padding: 0px 10px;
+}
+
+.about .coffee img {
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+}
+
+.about .coffee .definition {
+   line-height: 1.7;
+   margin: 30px auto;
+   padding: 25px;
+   background: white;
+   border-radius: 10px;
+}
+
+/* End of stylesheet*/
